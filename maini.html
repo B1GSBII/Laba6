@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Гра з кульками</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <canvas id="myCanvas" width="400" height="400" style="border: 1px solid black;"></canvas>
+  
+  <div>
+    <label for="numBalls">Кількість кульок:</label>
+    <input type="number" id="numBalls" value="8"><br>
+    
+    <label for="maxSpeed">Максимальна швидкість куль:</label>
+    <input type="number" id="maxSpeed" value="5"><br>
+    
+    <label for="minRadius">Мінімальний розмір куль:</label>
+    <input type="number" id="minRadius" value="5"><br>
+    
+    <label for="maxRadius">Максимальний розмір куль:</label>
+    <input type="number" id="maxRadius" value="20"><br>
+    
+    <label for="playerSize">Розмір гравця:</label>
+    <input type="number" id="playerSize" value="10"><br>
+    
+    <label for="playerName">Ім'я гравця:</label>
+    <input type="text" id="playerName" placeholder="Введіть ім'я"><br>
+    
+    <label for="goodColor">Колір хороших куль:</label>
+    <input type="color" id="goodColor" value="#FF0000"><br>
+    
+    <label for="initialHealth">Початкове здоров'я:</label>
+    <input type="number" id="initialHealth" value="100"><br>
+    
+    <label for="ballsToEat">Кількість кульок для перемоги:</label>
+    <input type="number" id="ballsToEat" value="3"><br>
+  </div>
+  
+  <button id="startButton">Старт</button>
+  <button id="stopButton">Стоп</button>
+  
+  <div id="results"></div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
